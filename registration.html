@@ -1,0 +1,65 @@
+<html> 
+    <head>
+        <script>
+            function valid()
+            {
+                let x = document.forms["f1"]["t2"].value;
+                if(x=="")
+                alert("please fill password");
+            }
+        </script>
+    </head>
+<body> 
+
+<basefont face="cambria"> 
+
+<form name="f1"  onsubmit="return valid()" method="post"> 
+<table align="center" cellspacing=15> 
+<caption align="center"><font color="blue"><h3><u>Yahoo Registration 
+Form</u></h3></font></caption> 
+<tr> 
+<td><b><font color="red">*</font>Name:</b></td> <td><input 
+type="text" name="t1"></td> 
+</tr> 
+<tr> 
+<td><b><font color="red">*</font>Password:</b></td> <td>
+    <input 
+type="password" name="t2" ></td> </tr> 
+<tr> 
+<td><b><font color="red">*</font>Email-Id:</b></td> <td><input 
+type="email" name="t3"></td> 
+</tr> 
+<tr> 
+<td><b><font color="red">*</font>Phone Number:</b></td> <td><input 
+type="text" name="t4"></td> </tr> 
+<tr> 
+<td><b><font color="red">*</font>Sex:</b></td> 
+<td><input type="radio" name="r1">Male<input type="radio" name="r1">Female</td> </tr> 
+<tr> 
+<td><b><font color="red">*</font>Date Of Birth:</b></td> 
+<td>
+<input type="date" name="date">
+</td>
+<tr> 
+<td><b><font color="red">*</font>Languages Known</b></td> <td><input 
+type="checkbox" name="c1">English<input type="checkbox" name="c2">Telugu<input 
+type="checkbox" name="c3">Hindi 
+<input type="checkbox" name="c4">Tamil 
+</td> 
+</tr> 
+<tr> 
+<td><b><font color="red">*</font>Address:</b></td> 
+<td><textarea name="txt1" rows="5" cols=25></textarea></td> 
+</tr> 
+</td> 
+</tr> 
+<tr align="center"> 
+<td><input type="submit" value="submit"></td> 
+<td><input type="reset" name="b2" value="Reset"></td> 
+</tr> 
+</table> 
+
+<h4 align="center"><font color="red">* Fields are Mandatory</font></h4> 
+</form>
+</body>
+</html>
